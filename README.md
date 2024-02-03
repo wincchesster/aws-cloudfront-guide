@@ -85,3 +85,12 @@ To configure AWS CloudFront, you need to follow these steps:
 <img src="https://i.imgur.com/7mSqq6m.png" alt="drawing" width="95%"/></img>
 
 > After that push the **Create Distribution** button and wait for the distribution to be deployed.
+
+## Step 3: Update Route 53
+
+After the distribution is deployed, you will get the domain name of the CloudFront distribution. You need to update the A record in Route 53 and point it to the CloudFront domain name. (or if you have a CNAME record, you need to update it)
+
+<img src="https://i.imgur.com/ZYnVKRJ.png" alt="drawing" width="95%"/></img>
+<img src="https://i.imgur.com/H0liCY5.png" alt="drawing" width="95%"/></img>
+
+
