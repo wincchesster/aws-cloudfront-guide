@@ -19,10 +19,11 @@ So it is:
 **Step 1: Route 53**
 
 Obviously, you need to have a domain name. And you need to have a hosted zone in Route 53. After you have a hosted zone, you need to create an A record for your domain name (if it without subdomains) and point it to the load balancer.
-Also you need Request a certificate from ACM. 
+Also you need Request a certificate from ACM.
+```
 **ATENTION!**
 **For working with CloudFront, you need to have a certificate in the us-east-1 region. So, if you have a certificate in another region, you need to request a new one in the us-east-1 region.**
-
+```
 
 
 
