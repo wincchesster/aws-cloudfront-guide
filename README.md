@@ -12,13 +12,16 @@ In my case, the web application runs on nginx on two instances and it is traffic
 So it is: 
 - 2 EC2 instances
 - Target Group
-- Load Balancer
+- Load Balancer with HTTP and HTTPS listener (after you have SSL certificate from ACM)
 - Security Group for Load Balancer
 - Security Group for EC2 instances
 
 **Step 1: Route 53**
 
-
+Obviously, you need to have a domain name. And you need to have a hosted zone in Route 53. After you have a hosted zone, you need to create an A record for your domain name (if it without subdomains) and point it to the load balancer.
+Also you need Request a certificate from ACM. 
+**ATENTION!**
+**For working with CloudFront, you need to have a certificate in the us-east-1 region. So, if you have a certificate in another region, you need to request a new one in the us-east-1 region.**
 
 
 
