@@ -8,8 +8,18 @@ If you read this guide, you probably already know what AWS CloudFront is. But if
 
 **Prerequisites:**
 
-In my case, the web application runs on nginx on two instances and it is traffic controlled by the loadbalancer. It looks like this:
-<img src="https://i.imgur.com/1ry7UKZ.png" alt="drawing" width="50%"/></img>
+In my case, the web application runs on nginx on two instances and it is traffic controlled by the loadbalancer.
+So it is: 
+- 2 EC2 instances
+- Target Group
+- Load Balancer
+- Security Group for Load Balancer
+- Security Group for EC2 instances
+
+**Step 1: Route 53**
+
+
+
 
 
 
