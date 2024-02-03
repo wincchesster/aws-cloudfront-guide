@@ -34,7 +34,7 @@ This how looks like my hosted zone in Route 53:
 
 To configure AWS CloudFront, you need to follow these steps:
 
-1. Open the AWS Management Console at https://console.aws.amazon.com/cloudfront/.
+1. Open the AWS Management Console
 2. In the navigation pane, choose **Create Distribution**.
 3. On the first page of the Create Distribution Wizard, choose **Get Started** in the Web section.
 4. On the next page, specify the following settings:
