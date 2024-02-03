@@ -8,7 +8,7 @@ If you read this guide, you probably already know what AWS CloudFront is. But if
 
 **Prerequisites:**
 
-In my case, the web application runs on nginx on two instances and it is traffic controlled by the loadbalancer.
+In my case, the web application **Booble.space** runs on nginx on two instances and it is traffic controlled by the loadbalancer.
 So it is: 
 - 2 EC2 instances
 - Target Group
@@ -20,6 +20,12 @@ So it is:
 
 Obviously, you need to have a domain name. And you need to have a hosted zone in Route 53. After you have a hosted zone, you need to create an A record for your domain name (if it without subdomains) and point it to the load balancer.
 Also you need Request a certificate from ACM.
+This how looks like my hosted zone in Route 53:
+<img src="https://i.imgur.com/8CtkdXJ.png" alt="drawing" width="95%"/></img>
+
+* 1 - A record for the domain name (booble.space) and point it to the load balancer (**for now**)
+* 2, 3 - default NS and SOA records
+* 4 - CNAME record for both certificate validation 
 
 > **ATENTION:** **For working with CloudFront, you need to have a certificate in the us-east-1 region. So, if you have a certificate in another region, you need to request a new one in the us-east-1 region.
 
