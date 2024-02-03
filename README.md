@@ -93,4 +93,10 @@ After the distribution is deployed, you will get the domain name of the CloudFro
 <img src="https://i.imgur.com/ZYnVKRJ.png" alt="drawing" width="95%"/></img>
 <img src="https://i.imgur.com/H0liCY5.png" alt="drawing" width="95%"/></img>
 
+## Step 4: Testing
+You can test the CloudFront by opening the domain name in the browser. You can also use the curl command to see the headers and check if the CloudFront is working.
+After that, you can check the CloudFront distribution in the AWS Management Console and see the statistics in **Reports and Analytics**.
+
+> NOTE: Try to open the domain name in the browser in incognito mode to avoid caching issues.
+
 
