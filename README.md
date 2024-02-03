@@ -5,6 +5,21 @@ Easy tips on how to configure AWS CloudFront
 If you read this guide, you probably already know what AWS CloudFront is. But if you don't, here is a brief explanation. AWS CloudFront is a content delivery network (CDN) service that delivers static and dynamic web content, video streams, and APIs around the world. It integrates with other Amazon Web Services products to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no minimum usage commitments.
 
 ## How to configure AWS CloudFront?
+
+**Prerequisites:**
+
+In my case, the web application runs on nginx on two instances and it is traffic controlled by the loadbalancer. It looks like this:
+<img src="https://i.imgur.com/1ry7UKZ.png" alt="drawing" width="50%"/></img>
+
+
+
+
+
+
+
+
+
+
 To configure AWS CloudFront, you need to follow these steps:
 
 1. Open the AWS Management Console at https://console.aws.amazon.com/cloudfront/.
