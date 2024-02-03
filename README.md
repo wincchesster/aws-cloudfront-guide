@@ -1,4 +1,4 @@
-# aws-cloudfront-guide
+# AWS-CloudFront-Guide
 Easy tips on how to configure AWS CloudFront
 
 ## What is AWS CloudFront?
@@ -6,7 +6,7 @@ If you read this guide, you probably already know what AWS CloudFront is. But if
 
 ## How to configure AWS CloudFront?
 
-**Prerequisites:**
+## Prerequisites:
 
 In my case, the web application **Booble.space** runs on nginx on two instances and it is traffic controlled by the loadbalancer.
 So it is: 
@@ -16,7 +16,7 @@ So it is:
 - Security Group for Load Balancer
 - Security Group for EC2 instances
 
-**Step 1: Route 53**
+## Step 1: Route 53
 
 Obviously, you need to have a domain name. And you need to have a hosted zone in Route 53. After you have a hosted zone, you need to create an A record for your domain name (if it without subdomains) and point it to the load balancer.
 Also you need Request a certificate from ACM.
