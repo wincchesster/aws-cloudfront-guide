@@ -42,13 +42,13 @@ To configure AWS CloudFront, you need to follow these steps:
    - **Origin Domain Name**: The domain name of the Amazon S3 bucket or the HTTP server from which you want CloudFront to get your content.
    > In my case, it is the domain name of the Load Balancer and for some reason just HTTP works, not HTTPS
    - **Origin Path**: The directory path in the Amazon S3 bucket or the HTTP server from which you want CloudFront to get your content, or the name of the custom origin.
-   (In my case, I leave it empty because the content is in the nginx root directory)
+   > In my case, I leave it empty because the content is in the nginx root directory
    - **Origin Name**: A unique identifier for the origin. This value helps you to identify the origin in CloudFront logs.
    
    <img src="https://i.imgur.com/pt1quiI.png" alt="drawing" width="95%"/></img>
 
 **Default cache behavior**
-    (I leave it as default)
+   > I leave it as default
 
 **Viewer**
    - **Viewer Protocol Policy**: Choose **Redirect HTTP to HTTPS** if you want CloudFront to redirect HTTP requests to HTTPS.
@@ -58,30 +58,30 @@ To configure AWS CloudFront, you need to follow these steps:
 
 **Cache key and origin requests**
    - **Cache Policy**: The cache policy to associate with the cache behavior. This value determines the values that CloudFront includes in the cache key.
-   (I choose the Chaching Optimized for the best performance)
+   > I choose the Chaching Optimized for the best performance
    - **Origin Request Policy**: The origin request policy to associate with the cache behavior. This value determines the values that CloudFront includes in requests that it sends to the origin.
-   (I leave it as default blank)
+   > I leave it as default blank
 
 <img src="https://i.imgur.com/a1v3fNR.png" alt="drawing" width="95%"/></img>
 
 **Function associations**
-   (I leave it as default)
+   > I leave it as default
 
 **Web Application Firewall (WAF)**
    WAF is a web application firewall that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources.
-   (I choose Do not enable WAF)
+   > I choose Do not enable WAF
 
 <img src="https://i.imgur.com/v97hKsu.png" alt="drawing" width="95%"/></img>
 
 **Settings**
    **Price class**: Choose the price class that corresponds to the features that you want to use.
-   (I choose the Price Class All Edge Locations for testing purposes)
+   > I choose the Price Class All Edge Locations for testing purposes
 
 **Alternate domain name (CNAME) - optional**
    - **CNAMEs**: The CNAMEs (alternate domain names) that you want to associate with this distribution.
-   (I put here the domain name of my web application **booble.space**)
+   > I put here the domain name of my web application **booble.space**
    - **Custom SSL certificate - optional** - Choose the custom SSL certificate that you want to use for this distribution.
 
 <img src="https://i.imgur.com/7mSqq6m.png" alt="drawing" width="95%"/></img>
 
-After that push the **Create Distribution** button and wait for the distribution to be deployed.
+> After that push the **Create Distribution** button and wait for the distribution to be deployed.
