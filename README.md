@@ -20,7 +20,7 @@ So it is:
 
 Obviously, you need to have a domain name. And you need to have a hosted zone in Route 53.
 Also you need Request a certificate from ACM.
-> **ATENTION:** **For working with CloudFront, you need to have a certificate in the us-east-1 region. So, if you have a certificate in another region, you need to request a new one in the us-east-1 region.
+> **ATENTION:** For working with CloudFront, you need to have a certificate in the us-east-1 region. So, if you have a certificate in another region, you need to request a new one in the us-east-1 region.
 This how looks like my hosted zone in Route 53:
 
 <img src="https://i.imgur.com/2sYvGkJ.png" alt="drawing" width="95%"/></img>
@@ -40,7 +40,7 @@ To configure AWS CloudFront, you need to follow these steps:
 4. On the next page, specify the following settings:
 **Origin**
    - **Origin Domain Name**: The domain name of the Amazon S3 bucket or the HTTP server from which you want CloudFront to get your content.
-   (In my case, it is the domain name of the Load Balancer and for some reason just HTTP works, not HTTPS)
+   > In my case, it is the domain name of the Load Balancer and for some reason just HTTP works, not HTTPS
    - **Origin Path**: The directory path in the Amazon S3 bucket or the HTTP server from which you want CloudFront to get your content, or the name of the custom origin.
    (In my case, I leave it empty because the content is in the nginx root directory)
    - **Origin Name**: A unique identifier for the origin. This value helps you to identify the origin in CloudFront logs.
